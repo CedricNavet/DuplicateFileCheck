@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="DuplicateFileCheck.exe" version="1.0.0.1" publicKeyToken="1d0f542e53fa9d13" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="DuplicateFileCheck" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="DuplicateFileCheck.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- Options du manifeste de contrôle de compte d'utilisateur
+             Si vous souhaitez modifier le niveau du contrôle de compte d'utilisateur Windows, remplacez le 
+             nœud requestedExecutionLevel par l'une des propositions suivantes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            La spécification de l'élément requestedExecutionLevel désactive la virtualisation de fichiers et du Registre. 
+            Supprimez cet élément si votre application a besoin de la virtualisation pour des
+            raisons de compatibilité descendante.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DuplicateFileCheck.exe" size="17376">
+      <assemblyIdentity name="DuplicateFileCheck" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>kIywWM+hxF6Xv6P6aenvsX9ymEnOMioYUzPdlYyydDE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="700336">
+      <assemblyIdentity name="Newtonsoft.Json" version="12.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>f5ErKKB8Im4L46z7L1fwUFOKugEA+h8L8sOfGh8dqBQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="DuplicateFileCheck.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- Liste des versions de Windows pour lesquelles cette application a été testée,
+           et sur lesquelles elle doit fonctionner. Décommentez éléments appropriés,
+           et Windows va automatiquement sélectionner l'environnement le plus compatible. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=DESKTOP-76BP78V\ccdu2" issuerKeyHash="d5c3dbd82dd63ffbec74f23b393e43505c3a3d14" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>tBezkAF4ChIVAAVGKRaMSNbixq8FRmqY0Ea9pdQrxBQ=</DigestValue></Reference></SignedInfo><SignatureValue>NGRI+hwjm+OiVDO3Nr2cBdjMrBVUGLwqP/AvhygGOkaV1es6UoSQM9FjUmZ0k60expUiiqnhxspndAzdC+z4c9E6QkRO3HDCPotQhgXcthf7N6SUer6MsOQwv85b6NhJmRuVgfHVhVvNbiWm5Fcauh1SWdsOfYNtCXUfWl+hRlE=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>6aBXQfTUN3lmG9PZFZGxgJ3q2wwqVngbMJ/JbZiZXlmBFvtN1nG82qx7Ig4cHbdk5vJWd3pEqLVtPJWjj5DcpB9amvj2wP1Ty64Rc94S6ZnAnHpORme4Gzruhlt3tSi366w3ptxkPTsABxi1Q2/Jvnpk6vLDlbIREfGjqBN+LpU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="14c42bd4a5bd46d0986a4605afc6e2d6488c162946050015120a780190b317b4" Description="" Url=""><as:assemblyIdentity name="DuplicateFileCheck.exe" version="1.0.0.1" publicKeyToken="1d0f542e53fa9d13" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-76BP78V\ccdu2</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>bILrQwtpl1jz5V+B7uJr4zRX8RHm+/QbVJXDWT72I/w=</DigestValue></Reference></SignedInfo><SignatureValue>IIpWug0YfZWe2/xNFZU4TrHG6UKSLVd6ZTAwYRmuzDaAPtU5qNChNmv6b7yZKTx6N8MWE04u+jyTKisYVS1ELOAsDWn+5mdi3NlS5givKk2ur05MP2vMthr21RIK/gsxB2lxwWptGimNuB//JnkTD1r0rwIpGPXRTWbTh6Sw+Hg=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>6aBXQfTUN3lmG9PZFZGxgJ3q2wwqVngbMJ/JbZiZXlmBFvtN1nG82qx7Ig4cHbdk5vJWd3pEqLVtPJWjj5DcpB9amvj2wP1Ty64Rc94S6ZnAnHpORme4Gzruhlt3tSi366w3ptxkPTsABxi1Q2/Jvnpk6vLDlbIREfGjqBN+LpU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQeNQY5Cx4iZ5FJccMQFDevjANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtADcANgBCAFAANwA4AFYAXABjAGMAZAB1ADIwHhcNMjAxMTE2MTU1MTI2WhcNMjExMTE2MjE1MTI2WjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtADcANgBCAFAANwA4AFYAXABjAGMAZAB1ADIwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAOmgV0H01Dd5ZhvT2RWRsYCd6tsMKlZ4GzCfyW2YmV5ZgRb7TdZxvNqseyIOHB23ZObyVnd6RKi1bTyVo4+Q3KQfWpr49sD9U8uuEXPeEumZwJx6TkZnuBs67oZbd7Uot+usN6bcZD07AAcYtUNvyb56ZOryw5WyERHxo6gTfi6VAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAoK4U5izK216vqRwTxBTwO+gsW0XUhrDBnpt/pIwcGwdHEzE/jqkE2AHAkHGr8Hql3+HXNA6B1lYpV6yEC2jk9CHut2mFP58s5Y8EMwy5xmC+sBJo+AadXA0pNeOlM5iAdDT80Ngg8Q3GPRpk5d3IkkjmnUxaGlcdjgJg6UI3wdk=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
